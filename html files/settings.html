@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="/580LearnKeyboard/css/sett.css">
-<!--    <script src="/580LearnKeyboard/scripts/settingsJ.js"></script>-->
+    <script src="/580LearnKeyboard/scripts/programManager.js"></script>
 <!--
 <Script>
     alert("Hello");
@@ -30,18 +30,18 @@
    <div class="dropdown">
   <button class="dropbtn">Choose Program Mode</button>
   <div class="dropdown-content">
-    <a href="#">Learning Mode</a>
-    <a href="#">Game Mode</a>
+    <a href="#" onclick="">Learning Mode</a>
+    <a href="#" onclick="">Game Mode</a>
   </div>
 </div>
  
    <div class="dropdown">
   <button class="dropbtn">Choose Your Expertise Level</button>
   <div class="dropdown-content">
-    <a href="#">Beginning</a>
-    <a href="#">Intermediate</a>
-    <a href="#">Advanced</a>
-    <a href="#">Expert</a>
+    <a href="#" onclick="ProgramManager('beginner')">Beginning</a>
+    <a href="#" onclick="ProgramManager('intermediate')">Intermediate</a>
+    <a href="#" onclick="ProgramManager('advanced')">Advanced</a>
+    <a href="#" onclick="ProgramManager('expert')">Expert</a>
   </div>
 </div>
   
@@ -49,7 +49,7 @@
   
   </div>
   
-  <a href="#"><button class="button">Start</button></a>
+  <a href="#" onclick="startGame()"><button class="button">Start</button></a>
    
    
     
