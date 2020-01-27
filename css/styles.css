@@ -23,6 +23,11 @@ h2 {
     text-align: center;
 }
 
+.button:hover {
+    background-color: mediumpurple;
+    cursor: pointer;
+}
+
 #start {
     text-align: center;
     margin-top: 18%;
