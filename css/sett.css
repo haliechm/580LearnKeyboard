@@ -1,5 +1,7 @@
 * {
     background-color: rgb(48, 48, 48);
+    align-content: center;
+    text-align: center;
 }
 
 h1 {
@@ -8,17 +10,24 @@ h1 {
     font-size: 60px;
 }
 
+
 .button {
-    font-size: 30px;
+    font-size: 35px;
     margin-top: 2%;
     color: rgb(48, 48, 48);
     background-color: white;
     text-align: center;
     align-content: center;
+    padding: 15px;
+  
+}
+
+.button:hover {
+    background-color: mediumpurple;
+    cursor: pointer;
 }
 
 .dropdownMenus {
-    
     text-align: center;
 }
 
