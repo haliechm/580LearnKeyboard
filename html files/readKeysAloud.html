@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    
+ 
+    
+    
+   
+        
+</head>
+<body>
+
+  <script>
+   document.addEventListener('keydown', function(event) {
+        var msg = new SpeechSynthesisUtterance();
+        var voices = window.speechSynthesis.getVoices();
+        msg.voice = voices[1];
+        
+        msg.volume = 10;
+        msg.rate = 1;
+        msg.pitch = 0.8;
+        msg.lang = 'en-US';
+        
+       
+       switch (event.keyCode) {
+               
+        case 37 : msg.text = "Left"
+               break;
+        case 81 : msg.text = "q";
+               break;
+        case 39 : msg.text = "Right";
+               break;
+        case 87 : msg.text = "w"
+               break;
+        case 69 : msg.text = "e";
+               break;
+        case 82 : msg.text = "r";
+               break;
+        case 84 : msg.text = "t"
+               break;
+        case 89 : msg.text = "y";
+               break;
+        case 85 : msg.text = "u";
+               break;
+        case 73 : msg.text = "i"
+               break;
+        case 79 : msg.text = "o";
+               break;
+        case 80 : msg.text = "p";
+               break;
+        case 65 : msg.text = "a"
+               break;
+        case 83 : msg.text = "s";
+               break;
+        case 68 : msg.text = "d";
+               break;
+        case 70 : msg.text = "f"
+               break;
+        case 71 : msg.text = "g";
+               break;
+        case 72 : msg.text = "h";
+               break;
+        case 74 : msg.text = "j"
+               break;
+        case 75 : msg.text = "k";
+               break;
+        case 76 : msg.text = "l";
+               break;
+        case 186 : msg.text = ";"
+               break;
+        case 90 : msg.text = "z";
+               break;
+        case 88 : msg.text = "x";
+               break;
+        case 67 : msg.text = "c"
+               break;
+        case 86 : msg.text = "v";
+               break;
+        case 66 : msg.text = "b";
+               break;
+        case 78 : msg.text = "n"
+               break;
+        case 77 : msg.text = "m";
+               break; 
+        case 49 : msg.text = "1";
+               break;
+        case 50 : msg.text = "2"
+               break;
+        case 51 : msg.text = "3";
+               break;
+        case 52 : msg.text = "4";
+               break;
+        case 53 : msg.text = "5"
+               break;
+        case 54 : msg.text = "6";
+               break;
+        case 55 : msg.text = "7";
+               break;
+        case 56 : msg.text = "8"
+               break;
+        case 57 : msg.text = "9";
+               break;
+        case 49 : msg.text = "0";
+               break;
+        case 189 : msg.text = "-"
+               break;
+        case 187 : msg.text = "=";
+               break;
+        case 8 : msg.text = "Delete";
+               break;       
+        case 32 : msg.text = "Space";
+             break;
+        case 192 : msg.text = "`"
+               break;
+        case 9 : msg.text = "Tab";
+               break;
+        case 20 : msg.text = "Caps Lock";
+               break;
+        case 16 : msg.text = "Shift"
+               break;
+        case 17 : msg.text = "Control";
+               break;
+        case 18 : msg.text = "Alt";
+               break;
+        case 91 : msg.text = "Command"
+               break;
+        case 93 : msg.text = "Command";
+               break;
+        case 38 : msg.text = "Up";
+               break;
+        case 40 : msg.text = "Down"
+               break;
+        case 13 : msg.text = "Enter";
+               break;
+        case 220 : msg.text = "\";
+               break;
+       }
+       
+       speechSynthesis.speak(msg);
+       
+       
+
+});
+    </script>
+    
+   
+    
+</body>
+</html>

@@ -41,22 +41,30 @@
         msg.voice = voices[10];
         msg.voiceURI = "native";
         msg.volume = 10;
-        msg.rate = 1.5;
+        msg.rate = 2;
         msg.pitch = 0.8;
         msg.text = "Place your pointer fingers on the keys with the little bumps on them. They are located on the fourth row down. Your left finger is on the F key, and your right finger is on the J key.";
         msg.lang = 'en-US';
+        speechSynthesis.speak(msg); 
+         
+        msg.text = "Press the F key to continue";
         speechSynthesis.speak(msg);
          
         msg.text = "Now put your middle finger on your left hand down on the key to the left of the F key. This is the D key";
         speechSynthesis.speak(msg);
          
-           msg.text("Press the D key now");
-        speechSynthesis.speak(msg);
-        msg.text("You now have three fingers down: your left pointer finger is on the F key, your right pointer finger is on the J key, and your left middle finger is on the D key.");
-        speechSynthesis.speak(msg);
+        var m = new SpeechSynthesisUtterance();
+        var voicess = window.speechSynthesis.getVoices();
+        m.voice = voices[10];
+        m.voiceURI = "native";
+        m.volume = 10;
+        m.rate = 1.5;
+        m.pitch = 0.8;
+        m.text = "You now have three fingers down: your left pointer finger is on the F key, your right pointer finger is on the J key, and your left middle finger is on the D key.";
+        m.lang = 'en-US';
+        speechSynthesis.speak(m);
+          
          
-        msg.text("Press the D key now");
-        speechSynthesis.speak(msg);
          
          
          
